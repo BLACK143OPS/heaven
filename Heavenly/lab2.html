@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(to left, rgba(99, 142, 143, 0.7), rgb(139, 226, 229));
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      color: black;
+      text-align: center;
+      letter-spacing: -1px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    .logo img {
+      max-width: 100px;
+      height: auto;
+      width: 250px;
+      border-radius: 100px;
+    }
+    nav {
+      background-color: rgb(133, 104, 68);
+      width: 100%;
+      height: 40px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    nav a {
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding: 5px;
+    }
+    nav a:hover {
+      filter: invert(1);
+      background: #A68C6B;
+      transition: 0.2s ease-in-out, transform 0.2s ease-in-out;
+      transform: scale(1.2);
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: 10%;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .intro-section {
+      width: 40%;
+      text-align: justify;
+    }
+    .intro-section h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+    .intro-section p {
+      font-weight: 300;
+      margin: 10px 0;
+      letter-spacing: 1px;
+    }
+    .shop-now {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      padding: 5px;
+      color: black;
+      text-decoration: none;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .shop-now:hover {
+      filter: invert(1);
+      background: #A68C6B;
+      transition: 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .shop-now img {
+      width: 20px;
+      object-fit: contain;
+    }
+    .outerbox {
+      overflow: hidden;
+      width: 400px;
+      border-radius: 10px;
+      margin: 20px 0;
+      background: white;
+    }
+    .sliderbox {
+      position: relative;
+      animation-name: slider;
+      animation-duration: 40s;
+      animation-iteration-count: infinite;
+      width: calc(400px * 10);
+      display: flex;
+      align-items: center;
+    }
+    .sliderbox img {
+      width: 400px;
+    }
+    @keyframes slider {
+      0%, 9% { left: 0; }
+      10%, 19% { left: calc(-400px * 1); }
+      20%, 29% { left: calc(-400px * 2); }
+      30%, 39% { left: calc(-400px * 3); }
+      40%, 49% { left: calc(-400px * 4); }
+      50%, 59% { left: calc(-400px * 5); }
+      60%, 69% { left: calc(-400px * 6); }
+      70%, 79% { left: calc(-400px * 7); }
+      80%, 89% { left: calc(-400px * 8); }
+      90%, 99% { left: calc(-400px * 9); }
+      100% { left: calc(-400px * 10); }
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png">
+    </div>
+    <h1>Hair Styling Accessories</h1>
+  </header>
+  <nav>
+    <a href="main.html">Home</a>
+    <a href="laboratory7.html">Product</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="content">
+    <div class="intro-section">
+      <h1>Unleash Your Hair Personality</h1>
+      <p>Express yourself boldly with our trendy, professional-grade styling solutions. From colorful clips to edgy accessories, our collection celebrates individuality.</p>
+      <a href="css.html" class="shop-now">
+        <img src="shopping-cart.png" />
+        Shop Now!
+      </a>
+    </div>
+    <div class="outerbox">
+      <div class="sliderbox">
+        <img src="img17.png" />
+        <img src="gg.png" />
+        <img src="img.png" />
+        <img src="img7.png" />
+        <img src="img9.png" />
+        <img src="img18.png" />
+        <img src="ss.png" />
+        <img src="qq.png" />
+        <img src="img25.png" />
+        <img src="img28.png" />
+      </div>
+    </div>
+  </div>
+  <footer>
+    ALL RIGHTS RESERVED 2024 @ Hair Styling Accessories
+  </footer>
+</body>
+</html>
